@@ -18,7 +18,7 @@ function buscar(){
     })
     .then(function(response){
         render(response)
-        console.log(response.sprites)
+        console.log(response)
     })
 
 }
