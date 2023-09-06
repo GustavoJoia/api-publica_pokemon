@@ -8,29 +8,92 @@
     <script defer type="module" src="../script/index.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="org-titulo">
+        <h1 class="titulo-pagina titulo1">Poké</h1>
+        <h1 class="titulo-pagina titulo2">Busca</h1>
+    </div>
     <div class="container">
         <div class="input-area">
-            <input type="text" name="id-name" id="id-name">
-            <button id="search-btn" name="search-btn">
+            <input type="text" name="id-name" id="id-name" class="nome">
+            <button id="search-btn" name="search-btn" class="botao">
                 <span class="material-symbols-outlined">
                     search
                 </span>
             </button>
         </div>
-        <table>
-            <thead>
-                <td id="number">#</td>
-                <td id="nome">Nome</td>
-                <td id="tipo">Tipagem</td>
-                <td id="hab">Habilidade</td>
-                <td id="sprite">Aparência</td>
-            </thead>
-            <tbody>
-    
-            </tbody>
-        </table>
+        <div class="container-info">
+            <div class="imagem">
+                <div class="circulo-wrapper">
+                    <p id="aparencia" class="aparencia"></p>
+                </div>
+                    <p id="nome" class="info nome-wrapper"></p>
+                    <p id="id" class="info"></p>
+            </div>
+            <div class="informacao">
+                <div class="section-info">
+                    <div id="container-tipo" class="conjunto-info">
+                        <h3 id="info" class="titulo">Tipagem</h3>
+                    </div>
+                    <div class="conjunto-info">
+                        <h3 id="info" class="titulo">Status base</h3>
+                        <div class="status-line">
+                            <p class="info">HP</p>
+                            <p id="status-hp" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Attack</p>
+                            <p id="status-attack" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Defense</p>
+                            <p id="status-defense" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Sp. Attack</p>
+                            <p id="status-spatt" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Sp. Defense</p>
+                            <p id="status-spdef" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Speed</p>
+                            <p id="status-speed" class="info status"></p>
+                        </div>
+                        <div class="status-line">
+                            <p class="info">Total</p>
+                            <p id="status-total" class="info statustotal"></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-info">
+                    <div id="container-habilidade" class="conjunto-info">
+                        <h3 id="info" class="titulo">Habilidade</h3>
+                    </div>
+                    <div class="conjunto-info">
+                        <h3 id="info" class="titulo">Experiência base</h3>
+                        <p id="base-exp" class="info"></p>
+                    </div>
+                    <div class="line">
+                        <div class="conjunto-info">
+                            <h3 id="info" class="titulo">Peso</h3>
+                            <p id="peso" class="info"></p>
+                        </div>
+                        <div class="conjunto-info">
+                            <h3 id="info" class="titulo">Altura</h3>
+                            <p id="altura" class="info"></p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
     
 </body>

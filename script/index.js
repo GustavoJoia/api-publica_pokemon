@@ -17,8 +17,8 @@ function buscar(){
         return response.json()
     })
     .then(function(response){
-        render(response)
         console.log(response)
+        render(response)
     })
 
 }
