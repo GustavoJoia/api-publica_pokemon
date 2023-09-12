@@ -1,7 +1,7 @@
 import dataFormat from "./dataFormat.js"
 import render from "./table.js"
 import alike, {alikeGen} from "./alike.js"
-import dinamic from "./dinamicRender.js"
+import dinamic, {dinamicGen} from "./dinamicRender.js"
 
 let btn = document.querySelector('#search-btn')
 
@@ -44,8 +44,10 @@ function search_alike(tipos, dexId){
         .then(function(response){
             
             let tipos_comp = response.types
-            if(alike(tipos, tipos_comp) == true || alikeGen(dexId, response.id) == true){
+            if(alike(tipos, tipos_comp) == true ){
                 dinamic(response)
+            } else if(alikeGen(dexId, response.id) == true){
+                dinamicGen(response)
             }
 
         })
