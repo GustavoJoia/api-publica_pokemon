@@ -1,4 +1,3 @@
-let container = document.querySelector('.container-info')
 import { typeFormat } from "./dataFormat.js"
 
 let id = document.querySelector('#id')

@@ -223,3 +223,9 @@ img{
   color: #fff;
   margin-left: 30px;
 }
+
+.conjunto-info.moves{
+  display: flex;
+  overflow: scroll;
+  flex-direction: column;
+}
